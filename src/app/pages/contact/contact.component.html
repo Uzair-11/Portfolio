@@ -1,0 +1,56 @@
+<section class="contact">
+  <div class="contact-container">
+    <h1>Contact</h1>
+
+    <p class="contact-intro">
+      If you’d like to connect, discuss a project, or have any questions,
+      feel free to reach out using the form below.
+    </p>
+
+    <form (ngSubmit)="submitForm()" #contactForm="ngForm" novalidate>
+      <div class="form-group">
+        <input
+          type="text"
+          placeholder="Your Name"
+          name="name"
+          [(ngModel)]="name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="email"
+          placeholder="Your Email"
+          name="email"
+          [(ngModel)]="email"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <textarea
+          placeholder="Your Message"
+          name="message"
+          [(ngModel)]="message"
+          rows="5"
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" [disabled]="!contactForm.valid">
+        Send Message
+      </button>
+    </form>
+
+    <!-- Direct Contact -->
+    <div class="direct-contact">
+      <p>
+        Prefer email?
+        <a href="mailto:rushuzair&#64;gmail.com">
+          rushuzair&#64;gmail.com
+        </a>
+      </p>
+    </div>
+  </div>
+</section>

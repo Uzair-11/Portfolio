@@ -1,0 +1,39 @@
+<section class="skills">
+  <div class="skills-container">
+    <h1>Skills</h1>
+
+    <p class="skills-intro">
+      Technologies and tools I have worked with and continue to strengthen
+      through practical projects and continuous learning in web development.
+    </p>
+
+    <div class="skills-grid">
+      <div class="skills-group">
+        <h2>Frontend</h2>
+        <div class="chips">
+          <span *ngFor="let skill of frontendSkills" class="chip">
+            {{ skill }}
+          </span>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <h2>Backend & Frameworks</h2>
+        <div class="chips">
+          <span *ngFor="let skill of backendSkills" class="chip">
+            {{ skill }}
+          </span>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <h2>Languages & Tools</h2>
+        <div class="chips">
+          <span *ngFor="let skill of tools" class="chip">
+            {{ skill }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

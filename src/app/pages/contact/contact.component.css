@@ -1,0 +1,115 @@
+/* Contact Section */
+.contact {
+  padding: 5rem 2rem;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Container */
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Heading */
+.contact-container h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Intro text */
+.contact-intro {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 3rem;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Input group */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #64748b;
+}
+
+/* Focus state */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.25);
+}
+
+/* Button */
+button {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 999px;
+  border: none;
+  background: #38bdf8;
+  color: #020617;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+/* Disabled button */
+button:disabled {
+  background: #1e293b;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+/* Direct contact */
+.direct-contact {
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+  color: #94a3b8;
+}
+
+.direct-contact a {
+  color: #38bdf8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.direct-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .contact-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-intro {
+    font-size: 0.95rem;
+  }
+}

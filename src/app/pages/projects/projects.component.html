@@ -1,0 +1,113 @@
+<section class="projects">
+  <div class="projects-container">
+
+    <!-- =====================
+         PAGE INTRO
+    ====================== -->
+    <h1>Projects</h1>
+    <p class="section-intro">
+      Here are some selected projects I have developed during and after
+      completing my bachelor’s degree. These projects demonstrate my practical
+      experience with web development, full-stack technologies, and applying
+      concepts to real-world use cases.
+    </p>
+
+    <!-- =====================
+         PROJECTS GRID
+    ====================== -->
+    <div class="grid">
+      <div class="card project-card" *ngFor="let project of projects">
+        <h2>{{ project.title }}</h2>
+
+        <p class="description">
+          {{ project.description }}
+        </p>
+
+        <p class="tech">
+          <strong>Tech Stack:</strong> {{ project.tech }}
+        </p>
+
+        <div class="links">
+          <a
+            *ngIf="project.github"
+            [href]="project.github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub Repository
+          </a>
+
+          <a
+            *ngIf="project.live"
+            [href]="project.live"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="live"
+          >
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- =====================
+         PROFILES
+    ====================== -->
+    <h1 class="sub-heading">Profiles</h1>
+    <p class="section-intro">
+      You can explore my code, learning activity, and professional presence on
+      the following platforms.
+    </p>
+
+    <div class="links-row">
+      <a
+        *ngFor="let profile of profiles"
+        [href]="profile.link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ profile.name }}
+      </a>
+    </div>
+
+    <!-- =====================
+         CERTIFICATES
+    ====================== -->
+    <h1 class="sub-heading">Certificates</h1>
+    <p class="section-intro">
+      A curated selection of certifications earned through online learning
+      platforms such as Coursera. These support my knowledge in web development,
+      software testing, programming fundamentals, and emerging technologies.
+    </p>
+
+    <div class="grid">
+      <div class="card cert-card" *ngFor="let cert of certificates">
+        <h2>{{ cert.title }}</h2>
+        <p>{{ cert.issuer }}</p>
+
+        <a
+          [href]="cert.link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="view-cert"
+        >
+          View Certificate (PDF)
+        </a>
+      </div>
+    </div>
+
+    <!-- =====================
+         VIEW ALL
+    ====================== -->
+    <div class="view-all">
+      <a
+        href="https://www.coursera.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View all certificates →
+      </a>
+    </div>
+
+  </div>
+</section>
