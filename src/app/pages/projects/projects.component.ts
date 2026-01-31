@@ -89,7 +89,7 @@ export class ProjectsComponent {
     },
     {
       name: 'LinkedIn',
-      link: '' // placeholder (add later)
+      link: 'www.linkedin.com/in/uzershaikh76'
     }
   ];
 
